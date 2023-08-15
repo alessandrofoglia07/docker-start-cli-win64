@@ -1,0 +1,17 @@
+{
+    "name": "docker-start",
+    "version": "1.0.0",
+    "main": "dist/docker-start.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/docker-start.js",
+        "pkg": "npx pkg . -t node18-win-x64 --out-path bin",
+        "dev": "npm run build && npm run start"
+    },
+    "bin": "dist/docker-start.js",
+    "author": "alessandrofoglia07",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.5.0"
+    }
+}
